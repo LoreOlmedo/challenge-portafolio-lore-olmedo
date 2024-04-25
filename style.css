@@ -1,0 +1,583 @@
+body {
+    box-sizing: border-box;
+    background-color: #edecdf;
+    font-family: 'Raleway';
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+#header{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: #040b14;
+    overflow-y: auto;
+    backdrop-filter: blur(x);
+    padding: 15px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+#header .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border-radius: 50%;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+#header .profile h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Lora", sans-serif;
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+.name {
+    color: #deecfb !important;
+}
+
+#header .profile .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #2c2f3f;
+    color: #fff;
+    line-height: 2;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+
+}
+
+a {
+    color: #149ddd;
+    text-decoration: none;
+}
+
+.text-center { 
+    text-align: center !important;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding: 30px 0 0 0;
+}
+
+.nav-menu {
+    padding: 30px 0 0 0;
+}
+
+.nav-menu a i {
+    font-size: 24px;
+    padding-right: 8px;
+    color: #6f7180;
+}
+
+.nav-menu a:hover i, .nav-menu .active i, .nav-menu li:hover > a i {
+    color: #149ddd;
+}
+
+.nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.nav-menu a:hover, .nav-menu .active, .nav-menu li:hover > a {
+    text-decoration: none;
+    color: #fff
+}
+
+a:hover {
+    color: #37b3ed;
+    text-decoration: none;
+}
+
+
+.nav-list a i {
+    font-size: 24px;
+    padding-right: 8px;
+    color: #6f7180;
+}
+
+/*-- ======= Background Section =======*/
+
+#background{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background:url(assets/code.jpg) center;
+    background-size: cover;
+}
+
+
+#background h1{
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 56px;
+    color:#fff;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+#background p{
+    width: 85vh;
+    color: #fff;
+    background-color: rgba(20, 157, 221, 0.818);
+    margin-bottom: 50px;
+    font-size: 23px;
+    font-family: "Poppins", sans-serif;
+    padding: 5px;
+}
+
+
+.background-container{
+    position: relative;
+    z-index: 2;
+    min-width: 950px;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+
+/*-- ======= Sobre mí Section ======= */
+
+#main{
+    margin-left: 300px;
+}
+
+section {
+    display: block;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+div {
+    display: block;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y)* -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.sobre-mi .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+}
+
+.sobre-mi .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre-mi .content ul li {
+    margin-bottom: 30px;
+    display: flex;
+    align-items:center;
+}
+
+.sobre-mi .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #149ddd;
+    line-height: 0;
+}
+
+.sobre-mi .content ul strong {
+    margin-right: 10px;
+}
+
+.aos-animate{
+    opacity: 1;
+    transform: translateZ(0);
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.seccion-titulo{
+    padding-bottom: 30px;
+}
+
+.seccion-titulo h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.seccion-titulo h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+
+h3{
+    font-size: 1.75rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.seccion-titulo p{
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: "Raleway";
+    line-height: 40px;
+    margin-right: 20px;
+    margin-top: 55px;
+}
+
+.row img{
+    max-width: 90%;
+    height: auto;
+    margin-top: 30px;
+}
+
+/*-- ======== Skills Section ======== --*/
+.skills-list{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 150px;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 40px;
+}
+
+
+.skills-list i{
+    justify-content: center;
+    display: grid;
+    padding-top: 30px;
+}
+
+/*<!-- ======= Resume Section ======= -->*/
+.resumen .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 60vh;
+}
+
+.resumen .resume-item p em{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resumen .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+}
+
+.resumen .resume-item h5 {
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resumen .resume-item ul {
+    padding-left: 20px;
+}
+
+.resumen .resume-item ul h5{
+    padding: 0;
+}
+
+.resumen .resume-item ul li {
+    padding-bottom: 10px;
+}
+
+.resumen .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #edecdf;
+    border: 2px solid #1f5297;
+}
+
+.resumen .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+    display: block;
+}
+
+.resumen .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+
+.row>* {
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-x) / 2);
+    margin-top: var(--bs-gutter-y);
+}
+
+
+/*-- ======= Portafolio Section ======= --*/
+
+
+/*-- ======= Contact Section ======= --*/
+.contacto{
+    padding-bottom: 130px;
+}
+
+.contacto .info {
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.align-items-stretch {
+    align-items: stretch !important;
+}
+.d-flex {
+    display: flex !important;
+}
+
+.contacto .info .email:hover i, .contacto .info .direccion:hover i {
+    background: #149ddd;
+    color: #fff;
+}
+
+.contacto .info i {
+    font-size: 20px;
+    color: #149ddd;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacto .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #050d18;
+}
+
+.contacto .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #173b6c;
+}
+
+.formulario{
+    padding: 0 0 0 50px;
+    width: 50vh;
+    height: 50vh;
+}
+
+.formulario .form-group{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    color: rgb(23, 59, 108)
+}
+
+.form-control{
+    width: 100%;
+    height: 30px;
+}
+
+.form-textarea{
+    width: 100%;
+    height: auto;
+}
+
+.form-group label{
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.formulario button{
+    width: 50%;
+    height: 40px;
+    margin-left: 25%;
+    background-color: #dff3fc;
+    color: rgb(20, 157, 221);
+    font-size: 20px;
+    font-weight: 540;
+    font-family: "Raleway";
+    border-radius: 20px;
+    border-color: rgb(20, 157, 221);
+}
+
+.formulario .boton-enviar:hover button {
+    background: #149ddd;
+    color: #fff;
+}
+
+.my-3{
+    font-size: 20px;
+    font-family: "Raleway";
+    font-weight: 500;
+    color: rgb(5, 13, 24);
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.my-3 .loading{
+    display: none;
+    font-size: 15px;
+}
+
+.my-3 .error-message{
+    display: none;
+}
+
+.my-3 .sent-message{
+    display: none;
+    font-size: 18px;
+}
+
+
+/*-- ======= Footer Section ======= --*/
+
+
+.copyright {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    margin: 2rem;
+    padding-left: 15vh;
+}
+
+footer {
+    text-align: center;
+    background-color: #3593c1;
+    padding: 1rem;
+    margin-top: 3rem;
+}
