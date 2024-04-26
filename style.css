@@ -54,7 +54,7 @@ a{
     -moz-text-align-last: center;
     text-align-last: center;
     font-family: "Lora", sans-serif;
-    font-size: 2em;
+    font-size: 23px;
     line-height: 1.2;
 }
 
@@ -63,15 +63,15 @@ a{
 }
 
 #header .profile .social-links a {
-    font-size: 18px;
+    font-size: 15px;
     display: inline-block;
     background: #2c2f3f;
     color: #fff;
     line-height: 2;
     border-radius: 50%;
     text-align: center;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     transition: 0.3s;
 
 }
@@ -98,7 +98,7 @@ a {
 }
 
 .nav-menu a i {
-    font-size: 24px;
+    font-size: 20px;
     padding-right: 8px;
     color: #6f7180;
 }
@@ -235,7 +235,7 @@ div {
 }
 
 .sobre-mi .content ul i {
-    font-size: 16px;
+    font-size: 13px;
     margin-right: 5px;
     color: #149ddd;
     line-height: 0;
@@ -313,11 +313,11 @@ p {
 
 .seccion-titulo p{
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Raleway";
     line-height: 40px;
     margin-right: 20px;
-    margin-top: 55px;
+    margin-top: 30px;
 }
 
 .row img{
@@ -330,8 +330,8 @@ p {
 .skills-list{
     display: flex;
     flex-flow: row wrap;
-    gap: 150px;
-    font-size: 30px;
+    gap: 130px;
+    font-size: 25px;
     font-weight: 500;
     padding-top: 40px;
 }
@@ -363,11 +363,12 @@ p {
 .resumen .resume-item p em{
     display: flex;
     flex-wrap: wrap;
+    font-size: 12px;
 }
 
 .resumen .resume-item h4 {
     line-height: 18px;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
@@ -376,7 +377,7 @@ p {
 }
 
 .resumen .resume-item h5 {
-    font-size: 16px;
+    font-size: 12px;
     padding-left: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -392,6 +393,7 @@ p {
 
 .resumen .resume-item ul li {
     padding-bottom: 10px;
+    font-size: 12px;
 }
 
 .resumen .resume-item::before {
@@ -407,7 +409,7 @@ p {
 }
 
 .resumen .resume-title {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -491,7 +493,6 @@ p {
 .formulario{
     padding: 0 0 0 50px;
     width: 50vh;
-    height: 50vh;
 }
 
 .formulario .form-group{
