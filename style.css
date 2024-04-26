@@ -40,9 +40,9 @@ a{
 #header .profile img {
     margin: 15px auto;
     display: block;
-    width: 120px;
+    width: 100px;
     border-radius: 50%;
-    height: auto;
+    height: 160px;
     overflow-clip-margin: content-box;
     overflow: clip;
 }
@@ -180,7 +180,10 @@ a:hover {
 
 
 .background-container{
-    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-35%);
+    bottom: 10px;
     z-index: 2;
     min-width: 950px;
     margin-left: auto;
@@ -452,6 +455,7 @@ p {
 .align-items-stretch {
     align-items: stretch !important;
 }
+    
 .d-flex {
     display: flex !important;
 }
