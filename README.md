@@ -7,3 +7,5 @@ Por cuestiones de tiempo lo dejaré hasta aquí para poder continuar con el curs
 regresaré a modificarlo cuando me encuentre con algo de tiempo.
 
 Muchas gracias!
+
+https://loreolmedo.github.io/challenge-portafolio-lore-olmedo/
